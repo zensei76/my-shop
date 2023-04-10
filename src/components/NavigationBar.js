@@ -27,7 +27,7 @@ export function NavigationBar({ count }) {
           <Button variant='outline-dark'>
             {" "}
             <span className='px-2'>🛒 Cart</span>{" "}
-            <Badge bg='secondary'>{count}</Badge>{" "}
+            <Badge  pill bg='dark'>{count}</Badge>{" "}
           </Button>
           {/* <Dropdown>
                 <Dropdown.Toggle variant='outline-dark' id='dropdown-basic'>

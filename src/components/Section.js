@@ -88,7 +88,7 @@ function Cards({ card,  cart }) {
         <Card.Img
           variant='top'
           src='https://dummyimage.com/450x300/dee2e6/6c757d.jpg' />
-        <Card.Body className='text-center p-4'>
+        <Card.Body className=' card-body text-center p-4'>
           <Card.Title>{card.name}</Card.Title>
           {card.review ? (
             <div className='d-flex justify-content-center small text-warning mb-2'>
@@ -96,9 +96,9 @@ function Cards({ card,  cart }) {
             </div>
           ) : null}
           <Card.Text className='fw-bolder'>{card.price}</Card.Text>
-          <Button  onClick={cart} variant='outline-dark' >{card.button}</Button>
 
         </Card.Body>
+          <Button className="card-btn mx-auto mb-3" onClick={cart} variant='outline-dark' >{card.button}</Button>
       </Card>
     </div>
   );

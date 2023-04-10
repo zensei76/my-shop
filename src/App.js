@@ -24,13 +24,13 @@ function App() {
   function addItem(event) {
     setCount(Count + 1);
     event.target.innerText = "Remove";
-    event.target.classList.value = "btn btn-outline-danger mt-auto";
+    event.target.classList.value = "mx-auto mb-3 btn btn-outline-danger mt-auto ";
   }
 
   function removeItem(event) {
     setCount(Count - 1);
     event.target.innerText = "Add to cart";
-    event.target.classList.value = "btn btn-outline-dark mt-auto";
+    event.target.classList.value = "mx-auto mb-3 btn btn-outline-dark mt-auto";
   }
   return (
     <div className='App'>
